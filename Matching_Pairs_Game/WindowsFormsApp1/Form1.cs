@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
                     int randomnumber = random.Next(icons.Count);
                     iconLabel.Text = icons[randomnumber];
 
+                    iconLabel.ForeColor = iconLabel.BackColor;
                     icons.RemoveAt(randomnumber);
                 }
             }
