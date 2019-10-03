@@ -68,6 +68,7 @@
             this.Browse.TabIndex = 2;
             this.Browse.Text = "Browse";
             this.Browse.UseVisualStyleBackColor = false;
+            this.Browse.Click += new System.EventHandler(this.Browse_Click);
             // 
             // button1
             // 
@@ -79,6 +80,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -90,6 +92,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -101,6 +104,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Pause";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -112,6 +116,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Play";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // openFileDialog1
             // 
