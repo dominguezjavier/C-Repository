@@ -28,13 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnConverter = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
+            // 
+            // btnConverter
+            // 
+            this.btnConverter.BackColor = System.Drawing.Color.Aqua;
+            this.btnConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConverter.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnConverter.Location = new System.Drawing.Point(0, 0);
+            this.btnConverter.Name = "btnConverter";
+            this.btnConverter.Size = new System.Drawing.Size(802, 54);
+            this.btnConverter.TabIndex = 0;
+            this.btnConverter.Text = "Currency Converter";
+            this.btnConverter.UseVisualStyleBackColor = false;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(0, 52);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(802, 398);
+            this.webBrowser1.TabIndex = 1;
             // 
             // currencyConvert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.btnConverter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -47,6 +71,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnConverter;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
