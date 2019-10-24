@@ -43,6 +43,7 @@
             this.btnConverter.TabIndex = 0;
             this.btnConverter.Text = "Currency Converter";
             this.btnConverter.UseVisualStyleBackColor = false;
+            this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
             // webBrowser1
             // 

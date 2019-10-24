@@ -21,5 +21,10 @@ namespace currencyConverter
         {
 
         }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.ofx.com/en-us/currency-converter/");
+        }
     }
 }
