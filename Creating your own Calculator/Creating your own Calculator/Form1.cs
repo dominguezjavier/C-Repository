@@ -24,6 +24,9 @@ namespace Creating_your_own_Calculator
 
         private void click_button(object sender, EventArgs e)
         {
+            if (resultBox.Text == "0")
+                resultBox.Clear();
+
             Button button = (Button)sender;
             resultBox.Text = resultBox.Text + button.Text;
         }
