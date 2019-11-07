@@ -12,6 +12,9 @@ namespace Creating_your_own_Calculator
 {
     public partial class Form1 : Form
     {
+        Double resultvalue = 0;
+        string operatorclick = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +32,19 @@ namespace Creating_your_own_Calculator
 
             Button button = (Button)sender;
             resultBox.Text = resultBox.Text + button.Text;
+        }
+
+        private void operator_click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operatorclick = button.Text;
+            resultvalue = Double.Parse(resultBox.Text);
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            resultBox.Text = "0";
+            resultvalue = 0;
         }
     }
 }
