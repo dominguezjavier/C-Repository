@@ -226,7 +226,7 @@
             this.btnSum.TabIndex = 13;
             this.btnSum.Text = "=";
             this.btnSum.UseVisualStyleBackColor = false;
-            this.btnSum.Click += new System.EventHandler(this.click_button);
+            this.btnSum.Click += new System.EventHandler(this.equalBtn_Click);
             // 
             // btn0
             // 
@@ -261,7 +261,6 @@
             this.clearBtn.TabIndex = 17;
             this.clearBtn.Text = "Clear";
             this.clearBtn.UseVisualStyleBackColor = false;
-
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // Form1

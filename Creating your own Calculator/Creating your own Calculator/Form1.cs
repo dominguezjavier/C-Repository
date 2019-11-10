@@ -46,5 +46,27 @@ namespace Creating_your_own_Calculator
             resultBox.Text = "0";
             resultvalue = 0;
         }
+
+        private void equalBtn_Click(object sender, EventArgs e)
+        {
+            switch (operatorclick)
+            {
+                case "+":
+                    resultBox.Text = (resultvalue + Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "-":
+                    resultBox.Text = (resultvalue - Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "X":
+                    resultBox.Text = (resultvalue * Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "÷":
+                    resultBox.Text = (resultvalue / Double.Parse(resultBox.Text)).ToString();
+                    break;
+                default:
+                    break;
+
+            }
+        }
     }
 }
