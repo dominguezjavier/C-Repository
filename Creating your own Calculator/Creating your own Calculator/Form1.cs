@@ -14,6 +14,7 @@ namespace Creating_your_own_Calculator
     {
         Double resultvalue = 0;
         string operatorclick = "";
+        bool isOperatorclick = false;
 
         public Form1()
         {
@@ -27,16 +28,35 @@ namespace Creating_your_own_Calculator
 
         private void click_button(object sender, EventArgs e)
         {
-            if (resultBox.Text == "0")
+            if (resultBox.Text == "0" || (isOperatorclick))
                 resultBox.Clear();
 
+            isOperatorclick = false;
             Button button = (Button)sender;
-            resultBox.Text = resultBox.Text + button.Text;
+            if (button.Text == ".")
+            {
+                if (!resultBox.Text.Contains("."))
+                    resultBox.Text = resultBox.Text + button.Text;
+            }
+            else               
+                resultBox.Text = resultBox.Text + button.Text;
         }
 
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (resultvalue != 0)
+            {
+                equalBtn.PerformClick();
+                operatorclick = button.Text;
+                isOperatorclick = true;
+            }
+            else
+            {
+                operatorclick = button.Text;
+                resultvalue = Double.Parse(resultBox.Text);
+                isOperatorclick = true;
+            }
             operatorclick = button.Text;
             resultvalue = Double.Parse(resultBox.Text);
         }
