@@ -28,14 +28,32 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void frmScSaver_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmScSaver_KeyDown(object sender, KeyEventArgs e)
         {
            Close();
+        }
+
+        private void frmScSaver_Load(object sender, EventArgs e)
+        {
+            string[] images = System.IO.Directory.GetFiles("pics");
+
+            foreach (string image in images)
+            {
+                BGImages.Add(new Bitmap(image));
+            }
+
+            for (int i = 0; i < 50; ++i)
+            {
+                BritPic mp = new BritPic();
+                mp.PicNum = i % BGImages.Count;
+                mp.x = rand.Next(0, Width);
+                mp.y = rand.Next(0, Height);
+
+                // mp.Speed = rand.Next(110, 300) / 100.0f;
+
+                BritPics.Add(mp);
+            }
+
         }
     }
 }
