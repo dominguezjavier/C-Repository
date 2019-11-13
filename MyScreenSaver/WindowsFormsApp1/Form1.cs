@@ -12,6 +12,17 @@ namespace WindowsFormsApp1
 {
     public partial class frmScSaver : Form
     {
+        List<Image> BGImages = new List<Image>();
+        List<BritPic> BritPics = new List<BritPic>();
+        Random rand = new Random();
+
+        class BritPic        {
+            public int PicNum;
+            public float x;
+            public float y;
+            public float speed;
+        }
+
         public frmScSaver()
         {
             InitializeComponent();
@@ -24,7 +35,7 @@ namespace WindowsFormsApp1
 
         private void frmScSaver_KeyDown(object sender, KeyEventArgs e)
         {
-            Close();
+           Close();
         }
     }
 }
