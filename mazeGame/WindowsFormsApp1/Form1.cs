@@ -30,5 +30,10 @@ namespace WindowsFormsApp1
             startingpoint.Offset(10, 10);
             Cursor.Position = PointToScreen(startingpoint);
         }
+
+        private void wall_MouseEnter(object sender, EventArgs e)
+        {
+            MoveToStart();
+        }
     }
 }
