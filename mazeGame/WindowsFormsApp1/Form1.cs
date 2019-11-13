@@ -15,12 +15,20 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            MoveToStart();
         }
 
         private void finishLabel_MouseEnter(object sender, EventArgs e)
         {
             MessageBox.Show("Congratulations!");
             Close();
+        }
+
+        private void MoveToStart()
+        {
+            Point startingpoint = panel1.Location;
+            startingpoint.Offset(10, 10);
+            Cursor.Position = PointToScreen(startingpoint);
         }
     }
 }
