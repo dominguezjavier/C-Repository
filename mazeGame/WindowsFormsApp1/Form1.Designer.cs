@@ -44,7 +44,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.finishLabel = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -99,7 +99,7 @@
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.finishLabel);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
@@ -240,14 +240,15 @@
             this.label15.Size = new System.Drawing.Size(29, 93);
             this.label15.TabIndex = 14;
             // 
-            // label17
+            // finishLabel
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(760, 481);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 13);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "Finish";
+            this.finishLabel.AutoSize = true;
+            this.finishLabel.Location = new System.Drawing.Point(760, 481);
+            this.finishLabel.Name = "finishLabel";
+            this.finishLabel.Size = new System.Drawing.Size(34, 13);
+            this.finishLabel.TabIndex = 16;
+            this.finishLabel.Text = "Finish";
+            this.finishLabel.MouseEnter += new System.EventHandler(this.finishLabel_MouseEnter);
             // 
             // label18
             // 
@@ -484,7 +485,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label finishLabel;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
