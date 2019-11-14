@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Create_Digital_Clock_Showing_Date
 {
-    public partial class Form1 : Form
+    public partial class clock : Form
     {
-        public Form1()
+        public clock()
         {
             InitializeComponent();
         }

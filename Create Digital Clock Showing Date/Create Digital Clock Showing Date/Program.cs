@@ -16,7 +16,7 @@ namespace Create_Digital_Clock_Showing_Date
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new clock());
         }
     }
 }
