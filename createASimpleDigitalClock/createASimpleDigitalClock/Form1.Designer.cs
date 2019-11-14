@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(26, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(877, 421);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "00:00:00";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // clock
             // 
@@ -36,6 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(929, 475);
+            this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "clock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -45,6 +58,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
 
